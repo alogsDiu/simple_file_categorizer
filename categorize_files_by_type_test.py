@@ -88,7 +88,7 @@ try :
 except ValueError as e:
     print(e)
 
-## TESTS ## 
+## TESTS ## TO RUN UNCOMMENT AND INSERT TO TERMINAL "pytest" or "pytest -v" for details 
 
 # def test_find_extention():
 #     assert find_extention('dhjasfjhsa.png') == '.png', 'should be ".png" '
@@ -115,6 +115,12 @@ except ValueError as e:
 #         '.docx': ['1p/3ch/_/__/New Microsoft Word Document.docx'], 
 #         '.accdb': ['1p/3ch/_/__/New Microsoft Access Database.accdb']
 #     }, '1p is not being looked correctly!'
+
+#     # GIT DOES NOT KEEP TRACK OF EMPTY DIRS SO GOTTA MAKE SURE IT EXISTS
+#     directories = ['2p/2ch', '2p/3ch']
+#     for directory in directories:
+#         os.makedirs(directory, exist_ok=True)
+
 
 #     assert categorize_files_by_type('2p') == {}, '2p is not being looked correctly !'
 
